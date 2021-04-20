@@ -6,12 +6,12 @@ terraform {
     }
   }
 
- backend "remote" {
-   organization = "rotem-hochman"
-   workspaces {
-     name = "azure-terraform-cloud"
-   }
- }
+  backend "remote" {
+    organization = "rotem-hochman"
+    workspaces {
+      name = "azure-terraform-cloud"
+    }
+  }
 }
 
 provider "azurerm" {
